@@ -3,8 +3,8 @@
  * @brief Bubble sort algorithm
  *
  * A pure implementation of bubble sort algorithm in C++.
- A detailed description of the algorithm:
- https://en.wikipedia.org/wiki/Bubble_sort
+ * A detailed description of the algorithm:
+ * https://en.wikipedia.org/wiki/Bubble_sort
 */
 
 #include <iostream>
