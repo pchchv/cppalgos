@@ -27,4 +27,27 @@ template <typename T>
 T square_area(T length) {
     return length * length;
 }
+
+/**
+ * @brief area of a [rectangle](https://en.wikipedia.org/wiki/Rectangle) (l * w)
+ * @param length is the length of the rectangle
+ * @param width is the width of the rectangle
+ * @returns area of the rectangle
+ */
+template <typename T>
+T rect_area(T length, T width) {
+    return length * width;
+}
+
+/**
+ * @brief area of a [triangle](https://en.wikipedia.org/wiki/Triangle) (b * h /
+ * 2)
+ * @param base is the length of the bottom side of the triangle
+ * @param height is the length of the tallest point in the triangle
+ * @returns area of the triangle
+ */
+template <typename T>
+T triangle_area(T base, T height) {
+    return base * height / 2;
+}
 }  // namespace math
