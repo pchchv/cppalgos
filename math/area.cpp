@@ -18,4 +18,13 @@
  * @brief Mathematical algorithms
  */
 namespace math {
+/**
+ * @brief area of a [square](https://en.wikipedia.org/wiki/Square) (l * l)
+ * @param length is the length of the square
+ * @returns area of square
+ */
+template <typename T>
+T square_area(T length) {
+    return length * length;
+}
 }  // namespace math
