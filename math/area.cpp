@@ -95,4 +95,16 @@ template <typename T>
 T sphere_surface_area(T radius) {
     return 4 * M_PI * pow(radius, 2);
 }
+
+/**
+ * @brief surface area of a [cylinder](https://en.wikipedia.org/wiki/Cylinder)
+ * (2 * pi * r * h + 2 * pi * r^2)
+ * @param radius is the radius of the cylinder
+ * @param height is the height of the cylinder
+ * @returns surface area of the cylinder
+ */
+template <typename T>
+T cylinder_surface_area(T radius, T height) {
+    return 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+}
 }  // namespace math
