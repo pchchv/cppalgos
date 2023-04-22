@@ -50,4 +50,26 @@ template <typename T>
 T triangle_area(T base, T height) {
     return base * height / 2;
 }
+/**
+ * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
+ * (b * h)
+ * @param base is the length of the bottom side of the parallelogram
+ * @param height is the length of the tallest point in the parallelogram
+ * @returns area of the parallelogram
+ */
+template <typename T>
+T parallelogram_area(T base, T height) {
+    return base * height;
+}
+
+/**
+ * @brief surface area of a [cube](https://en.wikipedia.org/wiki/Cube) ( 6 * (l
+ * * l))
+ * @param length is the length of the cube
+ * @returns surface area of the cube
+ */
+template <typename T>
+T cube_surface_area(T length) {
+    return 6 * length * length;
+}
 }  // namespace math
