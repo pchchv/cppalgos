@@ -50,6 +50,7 @@ template <typename T>
 T triangle_area(T base, T height) {
     return base * height / 2;
 }
+
 /**
  * @brief area of a [parallelogram](https://en.wikipedia.org/wiki/Parallelogram)
  * (b * h)
@@ -71,5 +72,27 @@ T parallelogram_area(T base, T height) {
 template <typename T>
 T cube_surface_area(T length) {
     return 6 * length * length;
+}
+
+/**
+ * @brief area of a [circle](https://en.wikipedia.org/wiki/Area_of_a_circle) (pi
+ * * r^2)
+ * @param radius is the radius of the circle
+ * @returns area of the circle
+ */
+template <typename T>
+T circle_area(T radius) {
+    return M_PI * pow(radius, 2);
+}
+
+/**
+ * @brief surface area of a [sphere](https://en.wikipedia.org/wiki/Sphere) ( 4 *
+ * pi * r^2)
+ * @param radius is the radius of the sphere
+ * @returns surface area of the sphere
+ */
+template <typename T>
+T sphere_surface_area(T radius) {
+    return 4 * M_PI * pow(radius, 2);
 }
 }  // namespace math
